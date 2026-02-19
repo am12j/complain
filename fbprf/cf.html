@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File a Complaint</title>
+    <link rel="stylesheet" href="cf.css">
+</head>
+<body>
+    <section class="form-section">
+        <h2>File Your Complaint</h2>
+        <form action="cf.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="problem">Describe Your Issue:</label>
+            <input type="text" id="problem" name="problem" placeholder="Enter your complaint type (e.g., electricity issue, road problem)" required>
+
+            <label for="description">Details of Your Complaint:</label>
+            <textarea id="description" name="description" placeholder="Explain the issue in detail" required></textarea>
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </section>
+</body>
+</html>
