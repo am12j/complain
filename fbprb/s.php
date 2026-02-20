@@ -2,10 +2,10 @@
 // s.php - Handle Sign Up
 
 // Database connection settings
-$servername = "localhost";
+$servername = "mysql.railway.internal";
 $username = "root";  // Change this to your MySQL username
-$password = "";  // Change this to your MySQL password
-$dbname = "your_database_name";  // Change this to your database name
+$password = "KBJZKuGuWMLZrZFhOVfAKIJgGGSlUAbu";  // Change this to your MySQL password
+$dbname = "railway";  // Change this to your database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
