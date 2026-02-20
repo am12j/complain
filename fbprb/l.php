@@ -4,9 +4,9 @@ $servername = "interchange.proxy.rlwy.net";
 $username = "root";  
 $password = "KBJZKuGuWMLZrZFhOVfAKIJgGGSlUAbu";  
 $dbname = "railway";  
-
+$port = 28720;
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname,$port);
 
 // Check connection
 if ($conn->connect_error) {
