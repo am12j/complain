@@ -1,6 +1,0 @@
-{
-  "name": "php-backend",
-  "description": "Simple PHP backend for Render",
-  "type": "project",
-  "require": {}
-}
