@@ -2,7 +2,7 @@
 // s.php - Handle Sign Up
 
 // Database connection settings
-$servername = "mysql.railway.internal";
+$servername = "interchange.proxy.rlwy.net";
 $username = "root";  // Change this to your MySQL username
 $password = "KBJZKuGuWMLZrZFhOVfAKIJgGGSlUAbu";  // Change this to your MySQL password
 $dbname = "railway";  // Change this to your database name

@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$servername = "mysql.railway.internal";
+$servername = "interchange.proxy.rlwy.net";
 $username = "root";  
 $password = "KBJZKuGuWMLZrZFhOVfAKIJgGGSlUAbu";  
 $dbname = "railway";  
