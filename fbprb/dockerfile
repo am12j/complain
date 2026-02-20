@@ -1,0 +1,16 @@
+FROM php:7.4-apache
+
+# Enable Apache's mod_rewrite for URL rewriting (optional but useful for some PHP apps)
+RUN a2enmod rewrite
+
+# Install PHP extensions for MySQL support (mysqli, pdo, pdo_mysql)
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Copy your PHP application into the Apache web directory
+COPY . /var/www/html/
+
+# Expose port 80 to make the service accessible
+EXPOSE 80
+
+# Run Apache in the foreground to keep the container running
+CMD ["apache2-foreground"]
