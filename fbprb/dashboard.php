@@ -1,4 +1,3 @@
-
 <?php
 // Start the session at the very top
 session_start();
