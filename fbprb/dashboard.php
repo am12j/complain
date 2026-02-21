@@ -22,9 +22,8 @@ $username = $_SESSION['username'];
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="tracking.html">Tracking</a>
+        <a href="https://complain-beryl.vercel.app/dashboard.html">Home</a>
+        <a href="https://complain-beryl.vercel.app/aboutus.html">About Us</a>
         <a href="logout.php">Logout</a>
     </nav>
 
