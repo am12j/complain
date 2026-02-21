@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$user', '$name', '$email', '$phone', '$pass')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Account created successfully! <a href='l.html'>Login here</a>";
+        echo "Account created successfully! <a href='https://complain-beryl.vercel.app/l.html'>Login here</a>";
     } else {
         // Handle error if password already exists
         if ($conn->errno == 1062) {
