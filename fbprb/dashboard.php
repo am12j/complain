@@ -6,7 +6,7 @@ session_start();
 // Check if the user is logged in
 if (!isset($_SESSION['username'])) {
     // If not logged in, redirect to login page
-    header("Location: l.php"); // or your login page
+    header("Location: https://complain-beryl.vercel.app/l.html"); // or your login page
     exit();
 }
 
@@ -37,7 +37,7 @@ $username = $_SESSION['username'];
     <section class="complaint-section">
         <h2>File a Complaint</h2>
         <p>Click below to submit your complaint.</p>
-        <a href="cf.html" class="btn">Go to Complaint Form</a>
+        <a href="https://complain-beryl.vercel.app/cf.html" class="btn">Go to Complaint Form</a>
     </section>
 
     <div class="complaint-types">

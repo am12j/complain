@@ -1,44 +1,36 @@
 <?php
+session_start(); // 1. ALWAYS the very first line
 
 $servername = "interchange.proxy.rlwy.net";
 $username = "root";  
 $password = "KBJZKuGuWMLZrZFhOVfAKIJgGGSlUAbu";  
 $dbname = "railway";  
 $port = 28720;
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname,$port);
 
-// Check connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form data
     $user = $_POST['username'];
-    $pass = $_POST['password'];  // Password is used as primary key
+    $pass = $_POST['password'];
 
-    // Query to check if the password exists in the database
+    // Using basic query as per your request (Note: Prepared statements are safer!)
     $sql = "SELECT * FROM users WHERE username = '$user' AND password = '$pass'";
-
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        // User found, password matches
-        session_start();
-        $_SESSION['username'] = $user;  // Start session and save username
-        header("Location: dashboard.php");  // Redirect to dashboard or logged-in page
+        $_SESSION['username'] = $user;
+        
+        // Since dashboard.php is on Render, this works. 
+        // If it's on Vercel, use the full https://... URL
+        header("Location: dashboard.php"); 
         exit();
     } else {
-        // Incorrect credentials
         echo "Wrong credentials!";
     }
 }
-
 $conn->close();
 ?>
-
-
-
-
