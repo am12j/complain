@@ -7,23 +7,40 @@
     <link rel="stylesheet" href="cf.css">
 </head>
 <body>
+
     <section class="form-section">
         <h2>File Your Complaint</h2>
+
         <form action="https://complain-1.onrender.com/cf.php" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+            </div>
 
-            <label for="problem">Describe Your Issue:</label>
-            <input type="text" id="problem" name="problem" placeholder="Enter your complaint type (e.g., electricity issue, road problem)" required>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </div>
 
-            <label for="description">Details of Your Complaint:</label>
-            <textarea id="description" name="description" placeholder="Explain the issue in detail" required></textarea>
+            <div class="form-group">
+                <label for="problem">Complaint Type</label>
+                <input type="text" id="problem" name="problem"
+                       placeholder="Electricity issue, Road damage..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Complaint Details</label>
+                <textarea id="description" name="description"
+                          placeholder="Explain the issue in detail" required></textarea>
+            </div>
 
             <button type="submit">Submit Complaint</button>
+
         </form>
     </section>
+
 </body>
 </html>

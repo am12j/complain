@@ -1,35 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     background-color: #fbe9e7;
     margin: 0;
     padding: 0;
 }
 
+/* Center the form */
 .form-section {
     background: white;
     padding: 30px;
-    margin: 50px auto;
-    width: 50%;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea {
-    width: 80%;
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #d84356;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Inputs and textarea */
+input,
+textarea {
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid #d84356;
     border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
 }
 
+/* Focus effect */
+input:focus,
+textarea:focus {
+    border-color: #ff4b5c;
+    box-shadow: 0 0 5px rgba(255, 75, 92, 0.3);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Button */
 button {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px;
     background: #d84356;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
 }
 
 button:hover {
