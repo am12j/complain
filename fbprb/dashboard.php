@@ -22,7 +22,7 @@ $username = $_SESSION['username'];
 </head>
 <body>
     <nav>
-        <a href="https://complain-beryl.vercel.app/dashboard.html">Home</a>
+        <a href="dashboard.php">Home</a>
         <a href="https://complain-beryl.vercel.app/aboutus.html">About Us</a>
         <a href="logout.php">Logout</a>
     </nav>
