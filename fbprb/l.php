@@ -1,11 +1,11 @@
 <?php
 session_start(); // 1. ALWAYS the very first line
 
-$servername = "interchange.proxy.rlwy.net";
-$username = "root";  
-$password = "KBJZKuGuWMLZrZFhOVfAKIJgGGSlUAbu";  
-$dbname = "railway";  
-$port = 28720;
+$servername = "16.171.169.17";
+$username = "cbuser";
+$password = "Cb@2026Project!";
+$dbname = "cb";
+$port = 3306;
 
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
 

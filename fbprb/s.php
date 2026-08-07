@@ -2,11 +2,11 @@
 // s.php - Handle Sign Up
 
 // Database connection settings
-$servername = "interchange.proxy.rlwy.net";
-$username = "root";  // Change this to your MySQL username
-$password = "KBJZKuGuWMLZrZFhOVfAKIJgGGSlUAbu";  // Change this to your MySQL password
-$dbname = "railway";  // Change this to your database name
-$port = 28720;  
+$servername = "16.171.169.17";
+$username = "cbuser";
+$password = "Cb@2026Project!";
+$dbname = "cb";
+$port = 3306; 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname,$port);
 
